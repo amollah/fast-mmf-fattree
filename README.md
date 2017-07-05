@@ -30,10 +30,8 @@ the command line syntax is as follows:
 **OPT**  uses the optimized MMF rate calculation algorithm based on sub-fat-tree saturation MMF\_PGFT\_OPT. \
          (Note: to use the parallelized version of **OPT**, set the environment variable OMP_NUM_THREADS appropriately in the MakeFile
 **trafficfile** is the input traffic file containing a list of source-destination pairs; one pair on each line. File must end with "-1 -1" marker \
-
 For example, to calculate the MMF rate on a full-bisection bandwidth 24-port fat-tree, use the following configuration: \
 Example: ./fast_mmf.out xgft 3 12 12 24 1 12 12 1 1 1 OPT trafficfile \
-
 Since a fat-tree of the above size can support upto 3456 leaf nodes, the source/destination values of each flow must be between 0 and 3455 \
 
 
