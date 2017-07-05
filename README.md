@@ -8,7 +8,7 @@ This repository containts the implementation of various methods devised and publ
 Max-min fairness is often used in the performance modeling of interconnection networks. Existing methods to compute max-min fair rates for multi-commodity flows have high complexity and are computationally infeasible for large networks. In this work, we show that by considering topological features, this problem can be solved efficiently for the fat-tree topology that is widely used in data centers and high performance computing clusters. Using two new algorithms that we developed, we demonstrate it is possible to find the max-min fair rate allocation for multi-commodity flows in fat-tree networks that support tens of thousands of nodes. We evaluate the run-time performance of the proposed algorithms and demonstrate an application.
 
 ![alt text][logo]
-
+<img src="https://github.com/amollah/fast-mmf-fattree/blob/master/443122_xgft.svg">
 [logo]: https://github.com/amollah/fast-mmf-fattree/blob/master/443122_xgft.svg "Example Fat-tree Topology"
 
 ## Usage
