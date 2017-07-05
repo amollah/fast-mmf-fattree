@@ -28,6 +28,7 @@ the command line syntax is as follows:
 **PF**  uses the Progressive Filling based MMF rate calculation algorithm for fat trees MMF\_PGFT\_PF. \
 **DMODK**  solves the Progressive Filling based MMF Simple Routing Problem using destination-mod-k routing \
 **OPT**  uses the optimized MMF rate calculation algorithm based on sub-fat-tree saturation MMF\_PGFT\_OPT. \
+         (Note: to use the parallelized version of **OPT**, set the environment variable OMP_NUM_THREADS appropriately in the MakeFile
 **trafficfile** is the input traffic file containing a list of source-destination pairs; one pair on each line. File must end with "-1 -1" marker \
 
 For example, to calculate the MMF rate on a full-bisection bandwidth 24-port fat-tree, use the following configuration: \
