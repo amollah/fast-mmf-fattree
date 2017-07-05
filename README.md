@@ -19,9 +19,9 @@ the command line syntax is as follows:
 
  _./fast_mmf.out [xgft/pgft] h m1 m2 ... mh w1 w2 ...wh p1 p2 ... ph [GEN/LP/PF/DMODK/OPT] trafficfile_
  
- **h** is the height of the fat-tree. The tool currently supports 2-level and 3-level generalized fat-trees. \
- **m1 m2 ... mh** lists the number of  nodes of  children/successor each switch level (excluding leaf level) \
- **w1 w2 ...wh** lists the number of parent/predecessor  nodes of each fat-tree level (excluding root level) \
+**h** is the height of the fat-tree. The tool currently supports 2-level and 3-level generalized fat-trees. \
+**m1 m2 ... mh** lists the number of  nodes of  children/successor each switch level (excluding leaf level) \
+**w1 w2 ...wh** lists the number of parent/predecessor  nodes of each fat-tree level (excluding root level) \
 **p1 p2 ... ph** lists the number of parallel links used to connect switches of adjacent levels \
 **GEN** uses the Generic MMF rate calculation algorithm  \
 **LP** uses the Linear Programming based MMF rate calculation algorithm for fat trees MMF\_PGFT\_LP. \
@@ -32,7 +32,7 @@ the command line syntax is as follows:
 **trafficfile** is the input traffic file containing a list of source-destination pairs; one pair on each line. File must end with "-1 -1" marker \
 For example, to calculate the MMF rate on a full-bisection bandwidth 24-port fat-tree, use the following configuration: \
 Example: ./fast_mmf.out xgft 3 12 12 24 1 12 12 1 1 1 OPT trafficfile \
-Since a fat-tree of the above size can support upto 3456 leaf nodes, the source/destination values of each flow must be between 0 and 3455 \
+Since a fat-tree of the above size can support upto 3456 leaf nodes, the source/destination values of each flow must be between 0 and 3455.
 
 
 ## Citation
