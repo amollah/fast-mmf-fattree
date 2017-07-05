@@ -30,14 +30,20 @@ the command line syntax is as follows:
 **OPT**  uses the optimized MMF rate calculation algorithm based on sub-fat-tree saturation MMF\_PGFT\_OPT. \
 **trafficfile** is the input traffic file containing a list of source-destination pairs; one pair on each line. File must end with "-1 -1" marker \
 
+For example, to calculate the MMF rate on a full-bisection bandwidth 24-port fat-tree, use the following configuration: \
+Example: ./fast_mmf.out xgft 3 12 12 24 1 12 12 1 1 1 OPT trafficfile \
+
+Since a fat-tree of the above size can support upto 3456 leaf nodes, the source/destination values of each flow must be between 0 and 3455 \
+
+
 ## Citation
 If you use any materials made available here in your work, please refer to our work using the following citation(s)
 
-### Plain Text 
+##### Plain Text 
 M. A. Mollah, X. Yuan, S. Pakin and M. Lang, "Fast Calculation of Max-Min Fair Rates for Multi-commodity Flows in Fat-Tree Networks," 2015 IEEE International Conference on Cluster Computing, Chicago, IL, 2015, pp. 351-360.
 doi: 10.1109/CLUSTER.2015.56
 
-### BibTeX
+##### BibTeX
 @INPROCEEDINGS{7307603, \
 author={M. A. Mollah and X. Yuan and S. Pakin and M. Lang}, \
 booktitle={2015 IEEE International Conference on Cluster Computing}, \
